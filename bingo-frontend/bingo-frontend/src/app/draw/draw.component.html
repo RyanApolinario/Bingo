@@ -1,0 +1,19 @@
+<div class="draw-container">
+  <!-- Exibe o número sorteado atual -->
+  <div class="current-number">
+    <h2>Número Sorteado:</h2>
+    <p>{{ currentNumber || '-' }}</p>
+    <button (click)="drawNumber()">Sortear Número</button>
+    <button (click)="resetDraw()">Reiniciar Sorteio</button>
+  </div>
+
+  <!-- Exibe o histórico de números sorteados -->
+  <div class="past-numbers">
+    <h3>Histórico de Números</h3>
+    <div class="grid">
+      <div *ngFor="let number of pastNumbers" class="grid-item">
+        {{ number }}
+      </div>
+    </div>
+  </div>
+</div>

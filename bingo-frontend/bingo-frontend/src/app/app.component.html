@@ -1,0 +1,3 @@
+<button (click)="toggleCard()">{{ showCard ? 'Esconder Cartela' : 'Gerar Cartela' }}</button>
+<app-card *ngIf="showCard"></app-card>
+<app-draw></app-draw>

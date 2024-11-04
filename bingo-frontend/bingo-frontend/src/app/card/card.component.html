@@ -1,0 +1,8 @@
+<div class="card-container">
+  <h3>Cartela de Bingo</h3>
+  <table>
+    <tr *ngFor="let row of cardNumbers">
+      <td *ngFor="let number of row">{{ number }}</td>
+    </tr>
+  </table>
+</div>
